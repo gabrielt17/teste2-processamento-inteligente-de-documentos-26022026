@@ -1,4 +1,4 @@
-# 🧾 Desafio Técnico — Extração e Geração de Fatura (Energia Solar)
+# 🧾 Desafio Técnico — Extração e Geração de Fatura 
 
 ## 📌 Contexto do Projeto
 
@@ -113,7 +113,7 @@ ECONOMIA CALCULADA                         R$ 40,95
 ------------------------------------------------------------
 
 
-TOTAL A PAGAR (CONSOLIDADO):               R$ 368,55
+TOTAL A PAGAR                             R$ 368,55
 ============================================================
 
 ```
@@ -123,7 +123,7 @@ TOTAL A PAGAR (CONSOLIDADO):               R$ 368,55
 ## 🛠️ Tecnologias Sugeridas
 
 * **Linguagem:** Python 3.x
-* **OCR:** Tesseract OCR ou Google Cloud Vision.
+* **OCR:** Tesseract OCR.
 * **Estruturação:** JSON ou Dicionários Python.
 * **Manipulação de Imagens:** OpenCV ou Pillow.
 
