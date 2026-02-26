@@ -1,0 +1,4 @@
+easyocr==1.7.2
+matplotlib==3.10.8
+opencv_python==4.13.0.92
+opencv_python_headless==4.13.0.92

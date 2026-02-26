@@ -130,3 +130,33 @@ TOTAL A PAGAR                             R$ 368,55
 ---
 
 **Dica:** Certifique-se de que o OCR consiga ler corretamente os números decimais (vírgula vs ponto) para evitar erros nos cálculos financeiros!
+
+
+# Documentação do teste
+
+## Desenvolvimento
+
+Foi desenvolvido um código para extrair texto via OCR de uma fatura de energia elétrica da CEMIG. O texto obtido foi tratado e ordenado em um dicionário. Além disso, foram desenvolvidas calculadoras simples para calcular "valor devido à usina" e "encargos". Por fim, todas as informações foram formatadas para ser impressas em um prompt de comando como solicitado.
+
+Para obter um programa funcional, foram utilizados as bibliotecas EasyOCR, Matplotlib, "re" e OpenCV. Elas extraem o texto via OCR, exibem imagens, dão suporte a expressões regulares e manipulam imagens respectivamente.
+
+A biblioteca Matplotlib é opcional e foi utilizada apneas para a visualização das imagens carregadas. Por algum motivo, no computador do autor a janela 'imshow' do OpenCV possui alguns elementos quebrados. Algum problema relacionado ao GTK.
+
+
+Para executar o código, o usuário deve executar os seguintes comandos:
+
+```bash
+python -m venv .venv
+. .venv/bin/activate
+# Linha para forçar o pytorch utilizar a CPU (Opcional)
+# pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+```
+
+Os comandos acima criam um ambiente virtual na pasta .venv (oculta em sistemas Linux), ativa-o e instala as dependências necessárias para o código.
+
+Casa os comandos acima sejam executados sem erros, para executar o código basta digitar no prompt:
+
+```bash
+python read.py
+```
